@@ -1,0 +1,23 @@
+<h1>Listing caterers</h1>
+
+<table>
+  <tr>
+    <th>Caterername</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @caterers.each do |caterer| %>
+  <tr>
+    <td><%= caterer.caterername %></td>
+    <td><%= link_to 'Show', caterer %></td>
+    <td><%= link_to 'Edit', edit_caterer_path(caterer) %></td>
+    <td><%= link_to 'Destroy', caterer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Caterer', new_caterer_path %>
