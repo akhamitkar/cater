@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @order.name %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @order.department %>
+</p>
+
+<p>
+  <b>Delivery date:</b>
+  <%= @order.delivery_date %>
+</p>
+
+<p>
+  <b>Conference room:</b>
+  <%= @order.conference_room %>
+</p>
+
+<p>
+  <b>No of people:</b>
+  <%= @order.no_of_people %>
+</p>
+
+<p>
+  <b>Cater:</b>
+  <%= @order.cater %>
+</p>
+
+<p>
+  <b>Food allergy:</b>
+  <%= @order.food_allergy %>
+</p>
+
+<p>
+  <b>Special requests:</b>
+  <%= @order.special_requests %>
+</p>
+
+<p>
+  <b>Credit card:</b>
+  <%= @order.credit_card %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  department: MyString
+  delivery_date: 2014-08-22 17:44:54
+  conference_room: MyString
+  no_of_people: 1
+  cater: MyString
+  food_allergy: MyString
+  special_requests: MyText
+  credit_card: MyString
+
+two:
+  name: MyString
+  department: MyString
+  delivery_date: 2014-08-22 17:44:54
+  conference_room: MyString
+  no_of_people: 1
+  cater: MyString
+  food_allergy: MyString
+  special_requests: MyText
+  credit_card: MyString
