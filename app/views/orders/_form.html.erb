@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :department %><br />
-    <%= f.text_field :department %>
+    <%= f.collection_select :department, Dept.order(:deptname),:deptname,:deptname, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :delivery_date %><br />
@@ -25,7 +25,8 @@
   </div>
   <div class="field">
     <%= f.label :conference_room %><br />
-    <%= f.text_field :conference_room %>
+    <%#= f.text_field :conference_room %>
+    <%= f.collection_select :conference_room, Conferencerm.all,:number,:number, include_blank: false %>
   </div>
   <div class="field">
     <%= f.label :no_of_people %><br />
@@ -33,7 +34,8 @@
   </div>
   <div class="field">
     <%= f.label :cater %><br />
-    <%= f.text_field :cater %>
+    <%#= f.text_field :cater %>
+    <%= f.collection_select :cater, Caterer.all,:caterername,:caterername, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :food_allergy %><br />
