@@ -1,13 +1,11 @@
-Cater::Application.routes.draw do
-  devise_for :users
-
+Catering::Application.routes.draw do
   resources :orders
 
 
   resources :caterers
 
 
-  resources :conferencerms
+  resources :confrooms
 
 
   resources :depts
@@ -63,6 +61,7 @@ Cater::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
+    root :to => 'orders#index'
 
   # See how all your routes lay out with "rake routes"
 

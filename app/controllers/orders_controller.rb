@@ -25,6 +25,9 @@ class OrdersController < ApplicationController
   # GET /orders/new.json
   def new
     @order = Order.new
+    @depts = Dept.all
+    @confrooms = Confroom.all
+    @caterers = Caterer.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +38,11 @@ class OrdersController < ApplicationController
   # GET /orders/1/edit
   def edit
     @order = Order.find(params[:id])
+    @depts = Dept.all
+    @confrooms = Confroom.all
+    @caterers = Caterer.all	
+    
+
   end
 
   # POST /orders

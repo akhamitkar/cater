@@ -18,7 +18,7 @@ class CaterersControllerTest < ActionController::TestCase
 
   test "should create caterer" do
     assert_difference('Caterer.count') do
-      post :create, caterer: { caterername: @caterer.caterername }
+      post :create, caterer: { caterer_name: @caterer.caterer_name }
     end
 
     assert_redirected_to caterer_path(assigns(:caterer))
@@ -35,7 +35,7 @@ class CaterersControllerTest < ActionController::TestCase
   end
 
   test "should update caterer" do
-    put :update, id: @caterer, caterer: { caterername: @caterer.caterername }
+    put :update, id: @caterer, caterer: { caterer_name: @caterer.caterer_name }
     assert_redirected_to caterer_path(assigns(:caterer))
   end
 

@@ -1,0 +1,4 @@
+class Confroom < ActiveRecord::Base
+  attr_accessible :confroom_no
+  has_many :orders
+end

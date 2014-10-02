@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Cater::Application.config.secret_token = '59e129f3b831831ebbbcadbeed67fa1f52eaba8638d20dd9f447663fe4eec92b634d12bb8b96883feabb3382b6054379de707edc8dad03b923f7c6ee78b4517b'
+Catering::Application.config.secret_token = 'c7ce328077291d2d91d6e29b19bea566f1ae9ea84b3d17d97e09b735f0fbd90f350ef3f6ea502c775a610dc33ac9c2cb1d453cf287fe2bbde75379eb2a3ca65f'

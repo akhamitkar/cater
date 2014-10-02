@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Cater::Application.load_tasks
+Catering::Application.load_tasks
