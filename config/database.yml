@@ -6,6 +6,7 @@
 development:
   adapter: mysql
   database: cater
+  host: localhost
   user: root
   password: root
   pool: 5
