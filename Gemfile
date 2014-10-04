@@ -13,7 +13,8 @@ gem 'rails_12factor', group: :production
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.5'
+  gem "sass", "~> 3.2.5"
+  gem 'sass-rails'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'less-rails'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
