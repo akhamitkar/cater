@@ -3,4 +3,5 @@ class Order < ActiveRecord::Base
 belongs_to :depts
 belongs_to :confrooms
 belongs_to :caterer
+belongs_to :user
 end
