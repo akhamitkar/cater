@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
   def index
-    @orders = Order.all
+    @orders = Order.where(user_id: current_user.id)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -49,6 +49,7 @@ class OrdersController < ApplicationController
   # POST /orders.json
   def create
     @order = Order.new(params[:order])
+    @order.user_id = current_user.id
 
     respond_to do |format|
       if @order.save
@@ -65,6 +66,7 @@ class OrdersController < ApplicationController
   # PUT /orders/1.json
   def update
     @order = Order.find(params[:id])
+    @order.user_id = current_user.id
 
     respond_to do |format|
       if @order.update_attributes(params[:order])
