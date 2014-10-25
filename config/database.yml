@@ -8,7 +8,7 @@ development:
   database: cater
   host: 127.0.0.1
   user: root
-  password: root
+  password: root1234
   pool: 5
   timeout: 5000
 
@@ -20,7 +20,7 @@ test: &test
   database: cater
   host: 127.0.0.1
   user: root
-  password: root
+  password: root1234
   pool: 5
   timeout: 5000
 
@@ -29,7 +29,7 @@ production:
   database: cater
   host: 127.0.0.1
   user: root
-  password: root
+  password: root1234
   pool: 5
   timeout: 5000
 
